@@ -9,7 +9,6 @@ gobtranschile.sublime-workspace
 /scripts/parser.sh
 .idea
 *.log
-sql*
 /nohup.out
 scripts
 /system/application/config/config.php
