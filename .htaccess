@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|googlef97cb8dad3ba468f\.html|google47838db5d5d918b0\.html|LiveSearchSiteAuth\.xml|robots\.txt|tmp)
+RewriteRule ^(.*)$ index.php/$1 [L]

@@ -1,0 +1,16 @@
+nbproject
+sftp-config.json
+gobtranschile.sublime-project
+gobtranschile.sublime-workspace
+/sphinx/sphinx.conf
+/sphinx/index/*.sp?
+/sphinx/log/*.log
+/sphinx/run/*.pid
+/scripts/parser.sh
+.idea
+*.log
+sql*
+/nohup.out
+scripts
+/system/application/config/config.php
+/system/application/config/database.php

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gobiernotransparentechile.cl" xmlns="http://www.gobiernotransparentechile.cl" elementFormDefault="qualified">
+
+<xs:element name="datos_ta">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="per_planta" minOccurs="0" maxOccurs="unbounded">
+			    <xs:complexType>
+			        <xs:sequence>
+			            <xs:element name="registro" maxOccurs="unbounded">
+			                <xs:complexType>
+			                    <xs:all>
+			                        <xs:element name="estamento" type="xs:string"/>
+			                        <xs:element name="apellido_paterno" type="xs:string"/>
+			                        <xs:element name="apellido_materno" type="xs:string"/>
+			                        <xs:element name="nombres" type="xs:string"/>
+			                        <xs:element name="grado_eus" type="xs:string"/>
+			                        <xs:element name="cargo" type="xs:string" minOccurs="0" />
+			                        <xs:element name="region" type="xs:string" minOccurs="0" />
+			                        <xs:element name="fecha_de_inicio" type="xs:date" minOccurs="0" />
+			                        <xs:element name="fecha_de_termino" type="xs:date" minOccurs="0" />
+			                        <xs:element name="observaciones" type="xs:string" minOccurs="0"/>
+			                    </xs:all>
+			                </xs:complexType>
+			            </xs:element>
+			        </xs:sequence>
+			        <xs:attribute name="ano" type="xs:gYear" use="optional" />
+			        <xs:attribute name="mes" type="xs:gDay" use="optional" />
+			    </xs:complexType>
+			</xs:element>
+			<xs:element name="per_honorarios" minOccurs="0" maxOccurs="unbounded">
+			    <xs:complexType>
+			        <xs:sequence>
+			            <xs:element name="registro" maxOccurs="unbounded">
+			                <xs:complexType>
+			                    <xs:all>
+			                        <xs:element name="apellido_paterno" type="xs:string"/>
+			                        <xs:element name="apellido_materno" type="xs:string"/>
+			                        <xs:element name="nombres" type="xs:string"/>
+			                        <xs:element name="descripcion_de_la_funcion" type="xs:string"/>
+			                        <xs:element name="calificacion_profesional" type="xs:string"/>
+			                        <xs:element name="cargo" type="xs:string"/>
+			                        <xs:element name="region" type="xs:string"/>
+			                        <xs:element name="unidad_monetaria" type="xs:string"/>
+			                        <xs:element name="honorario_bruto_mensual" type="xs:integer"/>
+			                        <xs:element name="fecha_de_inicio" type="xs:date"/>
+			                        <xs:element name="fecha_de_termino" type="xs:date" />
+			                        <xs:element name="observaciones" type="xs:string"/>
+			                    </xs:all>
+			                </xs:complexType>
+			            </xs:element>
+			        </xs:sequence>
+			        <xs:attribute name="ano" type="xs:gYear" use="optional" />
+			        <xs:attribute name="mes" type="xs:gDay" use="optional" />
+			    </xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

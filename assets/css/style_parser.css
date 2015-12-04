@@ -1,0 +1,53 @@
+body {background:#DFE6EB;margin:0;}
+.top {width:95%;height:80px; border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;background:#FFFFFF url('../images/header.jpg') no-repeat;text-align:right;padding:0 48px 0 0;}
+.top img {margin:15px 25px 0 0;}
+.contenido {width:95%;background:#FFFFFF;border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;padding:0 24px 5px 24px;font-family:Arial, Helvetica, sans-serif;font-size:11px;}
+
+.detalle {overflow: hidden; width:95%;background:#F6F6F8;border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;padding:15px 24px 25px 24px;font-family:Arial, Helvetica, sans-serif;font-size:11px;}
+
+.cenefa {font-size:11px;color:#CCCCCC;background:url('../images/fd-cenefa.jpg');height:25px;text-align:right;padding:5px;}
+
+.footer {width:95%;border-bottom:1px solid #CCCCCC; background:#FFF;border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;padding:10px 24px 25px 24px;font-family:Arial, Helvetica, sans-serif;font-size:11px;text-align:left;color:#035795;line-height:16px;clear:both;}
+.footer a {font-weight:bold;color:#035795;}
+.footer a:hover {text-decoration:none;}
+.footer p {margin-right:40px;}
+
+h1 {font-family:Arial, Helvetica, sans-serif;font-size:22px;color:#0F70B7;margin:10px 0 0 0;padding-top:6px;}
+h2 {font-size:12px;color:#999999;}
+h2 b{color:#FF0000;font-size:12px;padding:2px;line-height:2px;}
+h3 {text-align:RIGHT;font-size:13px;font-weight:normal;margin:0;color:#BED9EF;}
+h4 {font-size:13px;font-weight:normal;line-height:16px;margin:0px;color:#0F70B7}
+
+.tabla {border-left:1px solid #CCCCCC;border-top:1px solid #CCCCCC;border-bottom:1px solid #CCCCCC;border-right:1px solid #CCCCCC;width:100%; font-family:Arial, Helvetica, sans-serif; font-size:11px; max-width:inherit;}
+.tabla th {color:#035795; border-right:1px solid #CCCCCC;border-bottom:1px solid #CCCCCC;padding:3px 3px 3px 3px;background:#F9F9F9;}
+.tabla th b {font-weight:normal;}
+.tabla td {color:#035795; border-right:1px solid #CCCCCC;border-bottom:1px solid #F4F4F4;background:#FFF;padding:3px 4px 3px 4px;;}
+.tabla .pesos {text-align:right;}
+
+.subMenu {width:250px;float:left;margin:0 5px 10px 5px;}
+.subMenu a:hover {text-decoration:none;}
+.subMenu a {display:block; padding:4px 8px 2px 16px;background:#FFF;border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;color:#1060B0;}
+.subMenu b {background: #FCFCFC url('../images/sub_tit_0.png') no-repeat;display:block;padding-top:9px;padding-left:8px;padding-bottom:4px;color:#1060B0;}
+.subMenu b a {background:none;padding:0px;border:none;}
+.subMenu u {background: #F0F0F0 url('../images/sub_bottom_0.png');height:6px;display:block;padding:0;font-size:2px;}
+.subMenu font{display:block;height:20px;background:#FFF;background:#FFF;border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;}
+.subMenu img{
+	border: none;
+	float: right;	
+}
+.subMenu p {
+	display:block;
+	padding:4px 8px 2px 16px;
+	background:#FFF;
+	border-right:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;color:#1060B0;
+	margin: 0;
+}
+
+.subMenu .modified{
+	color: gray;	
+}
+
+.breadcrumb{
+	margin: 10px;
+}

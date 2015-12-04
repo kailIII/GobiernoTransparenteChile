@@ -1,0 +1,212 @@
+BODY {
+	FONT-FAMILY: arial
+}
+STRONG {
+	FONT-WEIGHT: bold
+}
+A {
+	COLOR: #0871b3
+}
+A:hover {
+	COLOR: #EE4143
+}
+.tooltip {
+	VERTICAL-ALIGN: bottom; CURSOR: help
+}
+#main H2 {
+	MARGIN: 10px 0px; COLOR: #0b2478; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+#main H3 {
+	MARGIN: 10px 0px; COLOR: #0b2478; FONT-SIZE: 14px
+}
+#main P {
+	MARGIN: 10px 0px; FONT-SIZE: 12px
+}
+#main UL.list {
+	LIST-STYLE-POSITION: outside; LIST-STYLE-TYPE: disc; MARGIN: 10px 0px; PADDING-LEFT: 20px
+}
+H1#logo A {
+	TEXT-INDENT: -9999px; MARGIN: 10px auto; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 540px; DISPLAY: block; BACKGROUND: url(../images/logo.png); HEIGHT: 98px
+}
+#searchDiv {
+	TEXT-ALIGN: center; MARGIN: 20px auto; COLOR: #333; FONT-SIZE: 14px
+}
+#searchDiv INPUT {
+	VERTICAL-ALIGN: middle
+}
+#searchDiv INPUT[type=text] {
+	BORDER-BOTTOM: #666666 1px solid; BORDER-LEFT: #666666 1px solid; MARGIN: 5px; WIDTH: 400px; COLOR: #666666; FONT-SIZE: 18px; BORDER-TOP: #666666 1px solid; BORDER-RIGHT: #666666 1px solid
+}
+#searchDiv A#busquedaAvanzadaAnchor {
+	COLOR: #0871b3; FONT-SIZE: 80%; VERTICAL-ALIGN: bottom
+}
+.autocompleteCounter {
+	FLOAT: right;
+	COLOR: #039;
+	FONT-SIZE: 10px
+}
+.hiddenUntilMouseOver {
+	opacity: 0
+}
+#bar {
+	BORDER-BOTTOM: #ddd 1px dashed; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: url(../images/bg.png); OVERFLOW: hidden; PADDING-TOP: 5px
+}
+#bar UL LI {
+	FLOAT: left; COLOR: #006CB7; FONT-SIZE: 12px; FONT-WEIGHT: bold; MARGIN-RIGHT: 10px
+}
+#bar UL LI A {
+	COLOR: #006CB7; FONT-WEIGHT: normal
+}
+#header_wrap {
+	BORDER-BOTTOM: #006CB7 3px solid; BACKGROUND: url(../images/bg.png)
+}
+#header {
+	WIDTH: 95%; MARGIN-LEFT: auto; OVERFLOW: hidden; MARGIN-RIGHT: auto
+}
+#header UL#tabs {
+	OVERFLOW: hidden
+}
+#header UL#tabs LI {
+	FLOAT: left; MARGIN-RIGHT: 5px
+}
+#header UL#tabs LI A {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #59BDFF; FLOAT: left; COLOR: #fff; FONT-SIZE: 14px; TEXT-DECORATION: none; PADDING-TOP: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px
+}
+#header UL#tabs LI.activeTab A {
+	BACKGROUND: #006CB7; COLOR: #ffffff
+}
+#header UL#tabs LI A:hover {
+	COLOR: #ffff88
+}
+#main {
+	WIDTH: 95%; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+#main .column {
+	WIDTH: 32%; FLOAT: left; MARGIN-RIGHT: 10px
+}
+#main .column_4 {
+	WIDTH: 24%; FLOAT: left; MARGIN-RIGHT: 10px
+}
+#main .resultList LI {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 20px
+}
+#main .primaryCat {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#main .secondaryCat {
+	FONT-SIZE: 12px
+}
+#main .breadcrumb {
+	MARGIN: 10px 0px 20px; OVERFLOW: hidden
+}
+#main .breadcrumb LI {
+	FLOAT: left; FONT-SIZE: 12px
+}
+#main .breadcrumb LI A {
+	PADDING-RIGHT: 20px; BACKGROUND: url(../images/breadcrumb.gif) no-repeat right 50%; MARGIN-RIGHT: 5px
+}
+#main .searchResults LI {
+	MARGIN-BOTTOM: 20px; FONT-SIZE: 14px
+}
+#main .infoServicio {
+	MARGIN: 10px 0px; FONT-SIZE: 12px
+}
+#main .widget {
+	BORDER-BOTTOM: #666666 1px solid; BORDER-LEFT: #666666 1px solid; MARGIN: 10px 0px; BORDER-TOP: #666666 1px solid; BORDER-RIGHT: #666666 1px solid; -moz-border-radius: 5px; -webkit-border-radius: 5px
+}
+#main .widgetHeader {
+	BORDER-BOTTOM: #666666 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #378ddd; COLOR: #fff; FONT-SIZE: 14px; PADDING-TOP: 5px
+}
+#main .widgetBody {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 12px; PADDING-TOP: 5px
+}
+#main .widgetBody LI {
+	MARGIN: 5px 0px
+}
+#main A.download {
+	TEXT-INDENT: -9999px; WIDTH: 24px; DISPLAY: block; BACKGROUND: url(../images/download.png); HEIGHT: 24px
+}
+#main TABLE {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; MARGIN: 10px 1px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+#main TABLE TH {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: #378ddd; COLOR: #fff; FONT-SIZE: 10px; OVERFLOW: hidden; BORDER-TOP: #cccccc 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 4px
+}
+#main TABLE TH A {
+	COLOR: #fff
+}
+#main TABLE TH A:hover {
+	COLOR: #ccc
+}
+#main TABLE TD {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; FONT-SIZE: 10px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 4px
+}
+#main TABLE TR:hover {
+	BACKGROUND: #ffffcc
+}
+#main SPAN.modified {
+	DISPLAY: block; COLOR: #cccccc; FONT-SIZE: 10px
+}
+#main UL.pagination {
+	TEXT-ALIGN: center; DISPLAY: block; OVERFLOW: hidden
+}
+#main UL.pagination LI {
+	MARGIN: 0px 5px; DISPLAY: inline; VERTICAL-ALIGN: bottom
+}
+#main UL.pagination LI A.siguiente {
+	TEXT-INDENT: -9999px; WIDTH: 24px; DISPLAY: inline-block; BACKGROUND: url(../images/siguiente.png); HEIGHT: 24px
+}
+#main UL.pagination LI A.anterior {
+	TEXT-INDENT: -9999px; WIDTH: 24px; DISPLAY: inline-block; BACKGROUND: url(../images/anterior.png); HEIGHT: 24px
+}
+#main IMG.external {
+	MARGIN: 0px 5px
+}
+#main FORM#busquedaAvanzadaForm {
+	BORDER-BOTTOM: #0871b3 3px solid; BORDER-LEFT: #0871b3 3px solid; PADDING-BOTTOM: 10px; MARGIN: 20px auto; PADDING-LEFT: 10px; WIDTH: 850px; PADDING-RIGHT: 10px; BACKGROUND: #0871b3; OVERFLOW: hidden; BORDER-TOP: #0871b3 3px solid; BORDER-RIGHT: #0871b3 3px solid; PADDING-TOP: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px
+}
+#main FORM#busquedaAvanzadaForm FIELDSET {
+	MARGIN: 10px
+}
+#main FORM#busquedaAvanzadaForm #searchInput {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; WIDTH: 600px; COLOR: #666; FONT-SIZE: 18px; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid
+}
+#main FORM#busquedaAvanzadaForm INPUT[type=submit] {
+	FLOAT: right; FONT-SIZE: 16px
+}
+#main FORM#busquedaAvanzadaForm LABEL {
+	COLOR: #fff; FONT-SIZE: 14px
+}
+#main FORM#busquedaAvanzadaForm .selectionBox {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; WIDTH: 400px; BACKGROUND: #fff; HEIGHT: 250px; OVERFLOW: auto; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid
+}
+#main FORM#busquedaAvanzadaForm .selectionBox .selectAllEntidadesDiv {
+	BORDER-BOTTOM: #666 1px dashed
+}
+#main FORM#busquedaAvanzadaForm .selectionBox .selectAllCategoriasDiv {
+	BORDER-BOTTOM: #666 1px dashed
+}
+#main FORM#busquedaAvanzadaForm .selectionBox LABEL {
+	COLOR: #000
+}
+#main .tagcloud {
+	TEXT-ALIGN: center; MARGIN: 20px auto
+}
+#main .tag {
+	MARGIN: 5px; TEXT-DECORATION: none
+}
+#footer_wrap {
+	BACKGROUND: #006CB7
+}
+#footer {
+	MARGIN-TOP: 30px; WIDTH: 920px; MARGIN-LEFT: auto; OVERFLOW: hidden; MARGIN-RIGHT: auto
+}
+#footer P {
+	TEXT-ALIGN: center; MARGIN: 10px; COLOR: #ffffff; FONT-SIZE: 10px
+}
+#footer IMG#sublogo {
+	MARGIN: 10px; FLOAT: left
+}
+#footer A {
+	COLOR: #fff
+}
