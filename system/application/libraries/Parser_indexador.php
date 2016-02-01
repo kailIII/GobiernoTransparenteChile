@@ -31,6 +31,7 @@ class Parser_indexador {
         $result->nombre = 'Home';
         $result->url = $url;
 
+
         //$result->links=array();
 
         $readhtml = $this->CI->parser_library->readHTML($url);
@@ -233,10 +234,30 @@ class Parser_indexador {
             $directorio->url = NULL;
 
             foreach ($anchors as $anchor) {
-                if (preg_match('/' . $val->keyword . '/is', $anchor->innertext)) { //Hay un match
-                    $directorio->url = $this->CI->parser_library->convertLinkToAbsolutePath($anchor->href, $url);
+                if (preg_match('/' . $val->keyword . '/is', $anchor->innertext)) { //Hay un match                    
+                    if(!is_null($anchor->onclick) && strlen($anchor->onclick)>1){                       
+                        $onclick = $anchor->onclick;
+                        $array_onclick = explode ( ',' , $onclick );
+                        if(!is_null($array_onclick[0])){
+                            $url_onclick = explode ( '(' , $array_onclick[0] );
+                            if(!is_null($url_onclick[1])){
+                                $url_aux = trim($url_onclick[1], "'");   
+                                $directorio->url = $this->CI->parser_library->convertLinkToAbsolutePath($url_aux, $url);
+
+                            }                            
+                        }
+                    }
+                    else{
+
+                        $directorio->url = $this->CI->parser_library->convertLinkToAbsolutePath($anchor->href, $url);
+                        
+                    }
                     $this->_findPaginasIntermedias($directorio->servicios_id, $directorio->pagina, $directorio->categoria, $directorio->url, null, null, $etiqueta_link_sub);
                 }
+
+               
+
+
             }
 
             //Si es que no encontramos la URL la almacenamos igual como NULL
@@ -273,6 +294,8 @@ class Parser_indexador {
      */
 
     function _findPaginasIntermedias($servicios_id, $pagina, $categoria, $url, $subseccion1=NULL, $subseccion2=NULL, $etiqueta_link_sub=null) {
+
+
         if($url==NULL || in_array($url, $this->revisados)) {
             return;
         //else if(in_array($url, $this->revisados) && !in_array($pagina, $this->permite_duplicados)){
@@ -309,24 +332,58 @@ class Parser_indexador {
 
         $html = $this->CI->parser_library->readHTML($url)->html;
 
+        
+
         $html_dom = str_get_html($html);
 
         //Tomamos cada una de las anchors
         $anchors = $html_dom->find('.subMenu a');
 
         foreach ($anchors as $anchor) {
+
             //$fecha = $this->findMesAnoInString($anchor->plaintext);
             //if ($fecha->mes != NULL || $fecha->ano != NULL) {
                 //echo 'Encontre match con año: '.$fecha->ano.' y mes '.$fecha->mes.'<br />';
                 $intermedia = true;
-                $new_url = $this->CI->parser_library->convertLinkToAbsolutePath($anchor->href, $url);
                 $cat=preg_replace('/\s+/', ' ', $anchor->innertext);
                 if ($directorio->subseccion1==NULL) $subseccion1=$cat;
                 else if ($directorio->subseccion2==NULL) $subseccion2=$cat;
 
-                //$html_dom->clear();
+                if(!is_null($anchor->onclick) && strlen($anchor->onclick)>1){
+                    $onclick = $anchor->onclick;
 
-                $this->_findPaginasIntermedias($servicios_id, $pagina, $categoria, $new_url, $subseccion1, $subseccion2, $etiqueta_link_sub);
+                    $array_onclick = explode ( ',' , $onclick );
+
+                    if(!is_null($array_onclick[0])){
+                        $url_onclick = explode ( '(' , $array_onclick[0] );
+                        if(!is_null($url_onclick[1])){
+                            $url_aux = trim($url_onclick[1], "'");   
+                            $new_url = $this->CI->parser_library->convertLinkToAbsolutePath($url_aux, $url);
+                        }
+                        
+                    }
+                    if($pagina != "otros_tramites" && $pagina != "solicitud_informacion" ){
+                        $this->_findPaginasIntermedias($servicios_id, $pagina, $categoria, $new_url, $subseccion1, $subseccion2, $etiqueta_link_sub);
+                    }
+
+                }
+
+                else{
+         
+                    $new_url = $this->CI->parser_library->convertLinkToAbsolutePath($anchor->href, $url);
+                    $this->_findPaginasIntermedias($servicios_id, $pagina, $categoria, $new_url, $subseccion1, $subseccion2, $etiqueta_link_sub);
+
+                }
+                
+
+                //$html_dom->clear();
+            
+                if($pagina != "otros_tramites" && $pagina != "solicitud_informacion" ){
+                    if(!is_null($anchor->onclick) && strlen($anchor->onclick)>1){
+
+                    }
+                    $this->_findPaginasIntermedias($servicios_id, $pagina, $categoria, $new_url, $subseccion1, $subseccion2, $etiqueta_link_sub);
+                }
 
                 //$urls[$año]= $this->convertLinkToAbsolutePath($anchor->href,$url);
             //}
