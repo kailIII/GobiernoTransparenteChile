@@ -13,9 +13,7 @@ if (!empty($results->entidades)){
 	echo '<h3>Entidades</h3>';
 	echo '<ul class="searchResults">';
 		foreach ($results->entidades as $result)
-			if($result->id != 6){
-				echo '<li><a href="'.site_url('directorio/entidad/'.$result->id).'">'.$result->entidad.'</a></li>';
-			}
+			echo '<li><a href="'.site_url('directorio/entidad/'.$result->id).'">'.$result->entidad.'</a></li>';
 			
 	echo '</ul>';
 }
@@ -24,9 +22,8 @@ if (!empty($results->servicios)){
 	echo '<h3>Servicios</h3>';
 	echo '<ul class="searchResults">';
 		foreach ($results->servicios as $result)
-			if($result->id != 126){
-				echo '<li><a href="'.site_url('directorio/entidad/'.$result->entidades_id.'/'.$result->id).'">'.$result->servicio.'</a></li>';
-			}
+			echo '<li><a href="'.site_url('directorio/entidad/'.$result->entidades_id.'/'.$result->id).'">'.$result->servicio.'</a></li>';
+
 	echo '</ul>';
 }
 if(!empty($results->entidades) || !empty($results->servicios)){
